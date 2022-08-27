@@ -33,12 +33,13 @@ int main()
         }
     }
 
-    for (i = 0; i < 60 - 30; i++)
+    for (i = 0; i < 30; i++)
     {
-        if (vetD[i] < vetE[i])
+        if (vetD[i] < vetE[i]){
             count += vetD[i];
-        else
+            }else{
             count += vetE[i];
+            }
     }
     printf("%d\n", count);
     return 0;
